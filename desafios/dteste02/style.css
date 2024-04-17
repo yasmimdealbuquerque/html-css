@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor00: #D9C7B8;
+    --cor01: #A68877;
+    --cor02: #D9965B;
+    --cor03: #BF6836;
+    --cor04: #73321A;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Cedarville Cursive", cursive;
+    
+}
+
+
+body{
+background-color: var(--cor00);
+font-family: var(--fonte-padrao);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor04));
+    min-height: 150px;
+    text-align: center;
+    
+}
+
+header h1{
+    padding-top: 10px ;
+    margin: auto;
+    color: var(--cor04);
+    text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.315);
+}
+
+header h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    margin: auto;
+    color: var(--cor04);
+    text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.315);
+
+}
+
+header p {
+    font-size: 1.06em;
+    margin: auto;
+    padding-bottom: 10px;
+    max-width:  600px;   
+    color: var(--cor00);
+    text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.315);
+
+}
+
+nav{
+    background-color: var(--cor04);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+    padding-bottom: 4px;
+    padding-left: 2px;
+    margin-bottom: 4px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--cor01);
+    padding: 4px;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+   
+}
+
+nav a:hover{
+    color: var(--cor00);
+    background-image: linear-gradient(to right, var(--cor03), var(--cor02)); font-weight: bold;
+    transition-duration: 0s;
+}
+
+main{
+    background-color: rgba(248, 233, 233, 0.678);
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+main h2{
+    font-family: var(--fonte-padrao);
+    padding-left: 30px;
+    background-image: linear-gradient(to right, var(--cor02), var(--cor03));
+}
+
+
+main p{
+    font-size: 1.05em;
+    line-height: 1.3em;
+    text-align: justify;
+    text-indent: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor01);
+    font-weight: bold;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor03);
+}
+
+main strong{
+    color: var(--cor04);
+    font-size: bold;
+}
+
+main img{
+    width: 100%;
+} 
+
+main ul.livros{
+    background-color: var(--cor00);
+    list-style-position: inside;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.3em;
+    text-indent: 7px;
+    border-radius: 0px 0px 8px 8px ;
+}
+
+main ul.temas{
+    background-color: var(--cor00);
+    list-style-position: inside;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.3em;
+    columns: 2;
+    text-indent: 7px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+aside > h3{ 
+    color: var(--cor04);
+    font-weight: bold;
+}
+
+aside > p{
+    font-size: 1.05em;
+    line-height: 1.3em;
+    text-align: justify;
+    text-indent: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+}
+
+div > iframe{
+    position: relative;
+    top: 50%;
+    left: 15%;
+    width: 70%;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: var(--cor03);
+    text-align: center;
+    padding: 2px;
+}
+
+footer p{
+    font-family: var(--fonte-padrao);
+    font-size: 0.9em;
+    color: black;
+}
+
+footer a{
+    color: var(--cor00);
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor04);
+    background-color: var(--cor00);
+    border-radius: 4px;
+}
+
