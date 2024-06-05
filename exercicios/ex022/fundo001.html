@@ -6,19 +6,30 @@
     <title>Teste de imagem de fundo</title>
     <style>
         body{
-            background-image: url(imagens/wallpaper002.jpg);
+            background-image: linear-gradient(to right, blue, rgb(0, 174, 255));
         }
+
         div.quadrado{
-            display: inline-block;
+            display: inline-flex;
             border: 2px solid black ;
             border-radius: 10px;
+            margin: 10px;
             background-color: lightblue;
             width: 200px;
             height: 200px;
         }
 
+        div.bola{
+            display: block;
+            border-radius: 50px;
+            border: 2px solid rgba(0, 0, 0, 0.671);
+            margin: 15px;
+            width: 200px;
+            height: 200px;
+        }
+
         div#q1{
-            background-color: salmon;
+            background-image: url(imagens/wallpaper001.jpg);
         }
 
         div#q2{
@@ -28,11 +39,15 @@
         div#q3{
             background-image: url('imagens/pattern003.png');
         }
+
+       .bola{
+        background-image: url(imagens/wallpaper002.jpg);
+       }
     </style>
 </head>
 <body>
     <div class="quadrado" id="q1">
-
+        
     </div>
 
     <div class="quadrado" id="q2">
@@ -42,5 +57,11 @@
     <div class="quadrado" id="q3">
 
     </div>
+
+    <div class="bola">
+
+    </div>
+
+    
 </body>
 </html>
